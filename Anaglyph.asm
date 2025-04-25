@@ -7,25 +7,25 @@ extern writeImageFile
 ;************************************************************************************************
 section .rodata
 ;************************************************************************************************
-msg_error1: 	   db "Numero errado de argumentos!", 0
-msg_error2:	    db "Modo nao reconhecido! So sao permitidos C ou M.", 0
-msg_error3:	    db "Metodo nao implementado!", 0
-msg_success1: 	 db "Imagens lidas com sucesso. Boa!", 0
-msg_success2:	  db "Imagem modificada com sucesso, gerando novo ficheiro...", 0
-msg_success3:	  db "Nova imagem criada com sucesso!", 0
+msg_error1:         db "Numero errado de argumentos!", 0
+msg_error2:         db "Modo nao reconhecido! So sao permitidos C ou M.", 0
+msg_error3:         db "Metodo nao implementado!", 0
+msg_success1:       db "Imagens lidas com sucesso. Boa!", 0
+msg_success2:       db "Imagem modificada com sucesso, gerando novo ficheiro...", 0
+msg_success3:       db "Nova imagem criada com sucesso!", 0
 
 ;************************************************************************************************
 section .bss
 ;************************************************************************************************
-option			          resb 1
-name_left_image		  resb 255
-name_right_image	  resb 255
-name_write		       resb 255
+option                  resb 1
+name_left_image         resb 255
+name_right_image        resb 255
+name_write              resb 255
 
-bytes_left_image	  resb 1048576
-size_left_image		  resd 1
-offset_left_image	 resd 1
-bytes_read_left		  resq 1
+bytes_left_image        resb 1048576
+size_left_image         resd 1
+offset_left_image       resd 1
+bytes_read_left         resq 1
 
 bytes_right_image	 resb 1048576
 size_right_image	  resd 1
