@@ -7,12 +7,12 @@ extern writeImageFile
 ;************************************************************************************************
 section .rodata
 ;************************************************************************************************
-msg_error1:         db "Numero errado de argumentos!", 0
-msg_error2:         db "Modo nao reconhecido! So sao permitidos C ou M.", 0
-msg_error3:         db "Metodo nao implementado!", 0
-msg_success1:       db "Imagens lidas com sucesso. Boa!", 0
-msg_success2:       db "Imagem modificada com sucesso, gerando novo ficheiro...", 0
-msg_success3:       db "Nova imagem criada com sucesso!", 0
+msg_error1:         db "Wrong number of arguments!", 0
+msg_error2:         db "Unrecognized algorithm! Only C or M are allowed.", 0
+msg_error3:         db "Unimplemented method!", 0
+msg_success1:       db "Successfully read images, nice.", 0
+msg_success2:       db "Successfully created anaglyph image, generating output...", 0
+msg_success3:       db "Successfully saved the output image, thanks for using!", 0
 
 ;************************************************************************************************
 section .bss
